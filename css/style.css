@@ -1,0 +1,440 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+:root {
+    --iriscolor: #4D5AE5;
+    --navyblue: #2E2F42;
+    --navcolor: black;
+    --oceancolor: #404bbf;
+    --whitecolor: white;
+    --slatecolor: #434455;
+    --cloud: #f4f4fd;
+    --ocean: #404bbf;
+    --cornflower: #E7E9FC;
+}
+
+/*----Checked----*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/*----Checked----*/
+html {
+    box-sizing: border-box;
+}
+
+/*----Checked----*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*----Checked----*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*----Checked----*/
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----Checked----*/
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*----Checked----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--slatecolor);
+    background-color: var(--whitecolor);
+}
+
+/*-----------------------------------*\
+  #Header
+\*-----------------------------------*/
+/*----Checked----*/
+.page-header {
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+}
+
+/*----Checked----*/
+.menu,
+.navigation,
+.nav-menu,
+.contact-menu {
+    display: flex;
+    align-items: center;
+}
+
+/*----Checked----*/
+.logo-link {
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+/*----Checked----*/
+.nav-menu {
+    margin-left: 93px;
+
+}
+
+/*----Checked----*/
+.nav-menu .page {
+    color: var(--navyblue);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
+}
+
+/*----Checked----*/
+.contacts-menu {
+    margin-left: auto;
+    display: flex;
+}
+
+/*----Checked----*/
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/*----Checked----*/
+.contacts-menu .contact {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*----Checked----*/
+.nav-menu.list .page.link:hover,
+.nav-menu.list .page.link:focus,
+.nav-menu.list .page.current.link,
+.contacts-menu.list .contact.link:hover,
+.contacts-menu.list .contact.link:focus {
+    color: var(--iriscolor);
+}
+
+/*-----------------------------------*\
+  #Main Section 
+\*-----------------------------------*/
+/*----Checked----*/
+.bg-hero {
+    background-color: var(--navyblue);
+}
+
+/*----Checked----*/
+.hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+/*----Checked----*/
+.bg-team {
+    background-color: var(--cloud);
+}
+
+/*----Checked----*/
+.hero-title {
+    color: var(--whitecolor);
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/*----Checked----*/
+.button {
+    cursor: pointer;
+    border-color: transparent;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*----Checked----*/
+.button.primary {
+    background-color: var(--iriscolor);
+    color: var(--whitecolor);
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0. 0.15);
+}
+
+/*---- Portfolio----*/
+/*---- Button part----*/
+
+/*----Checked----*/
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/*----Checked----*/
+.filters .space+.space {
+    margin-left: 8px;
+}
+
+/*----Checked----*/
+.button.filter {
+    background: var(--cloud);
+    color: var(--iriscolor);
+    font-weight: 500;
+    line-height: 1.62;
+    padding: 6px 22px;
+}
+
+/*----Checked----*/
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+    background-color: var(--ocean);
+    color: var(--cloud);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*----Index part----*/
+/*----Checked----*/
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--oceancolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*----Section 2----*/
+/*----Checked----*/
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+
+/*----Checked----*/
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+/*----Checked----*/
+.benefits .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/*----Checked----*/
+.benefits .description {
+    color: var(--slatecolor);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.71;
+}
+
+/*----Checked----*/
+.benefits .title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+/*----Checked----*/
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+/*----Checked----*/
+.what-we-do .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/*----for Section 3 & 4----*/
+/*----Checked----*/
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/*----Checked----*/
+.section.no.top-padding {
+    padding-top: 0;
+}
+
+/*----Checked----*/
+.section-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/*----Checked----*/
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/*----Checked----*/
+.team .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--whitecolor);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*----Checked----*/
+.team .name,
+.team .position {
+    text-align: center;
+    line-height: 1.19;
+}
+
+/*----Checked----*/
+.team .name {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/*----Checked----*/
+.team .position {
+    color: var(--slatecolor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*----Checked----*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+/*----Checked----*/
+.project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/*----Checked----*/
+.substrate {
+    background: var(--whitecolor);
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+}
+
+/*----Checked----*/
+.project .name {
+    color: var(--navyblue, #2E2F42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2px;
+    margin-bottom: 4px;
+    letter-spacing: 0.06em;
+}
+
+/*----Checked----*/
+.project .type {
+    color: var(--slate, #434455);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+/*----Checked----*/
+.page-footer {
+    padding: 60px 0;
+}
+
+/*----Checked----*/
+.page-footer.bg-footer {
+    background-color: var(--navyblue);
+}
+
+/*----Checked----*/
+.logo-link.footer {
+    margin-bottom: 20px;
+}
+
+/*----Checked----*/
+.footer-description {
+    color: var(--cloud);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 17px;
+}
+
+/*----Checked----*/
+.logo,
+.studio {
+    display: inline-block;
+}
+
+/*----Checked----*/
+.logo {
+    color: var(--iriscolor);
+}
+
+/*----Checked----*/
+.studio {
+    color: var(--navyblue);
+
+}
+
+/*----Checked----*/
+.studio-footer {
+    color: var(--cloud);
+}
