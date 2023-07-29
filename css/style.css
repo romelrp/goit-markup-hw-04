@@ -11,6 +11,8 @@
     --cloud: #f4f4fd;
     --ocean: #404bbf;
     --cornflower: #E7E9FC;
+    --green: #31D0AA;
+
 }
 
 /*----Checked----*/
@@ -69,6 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 /*-----------------------------------*\
@@ -160,16 +163,14 @@ body {
     padding-top: 200px;
     text-align: center;
     border: 2px solid #2E2F42;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--grey, rgba(46, 47, 66, 0.70));
-  background-image: url(https://www.clickasnap.com/25014ddc-6013-417f-98d0-f7394d6bbb51/photo/01H6BTTEJVS0TTH5K9JYPM7X4C);
-  color: #fff;
-  text-align: center;
-  background-position: center;
-
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/people-office.jpg), lightgray 0px -167.766px / 100% 139.922% no-repeat;
+    color: #fff;
+    text-align: center;
+    background-position: center;
 }
 
 /*----Checked----*/
@@ -181,10 +182,11 @@ body {
 .hero-title {
     color: var(--whitecolor);
     font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.04em;
+    line-height: 60px;
+    letter-spacing: 1.12px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /*----Checked----*/
@@ -195,6 +197,7 @@ body {
     font-family: inherit;
     border-radius: 4px;
     font-size: 16px;
+    
 }
 
 /*----Checked----*/
@@ -206,6 +209,9 @@ body {
     font-weight: 500;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0. 0.15);
+    gap: 10px;
+    display: inline-flex;
+    align-items: flex-start;
 }
 
 /*---- Portfolio----*/
@@ -388,25 +394,70 @@ body {
     color: var(--slatecolor);
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-social-item {
+    width: 44px;
+    height: 44px;
+    
+}
+
+.team-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whitecolor);
+    background-color: var(--iriscolor);
+    
+}
+
+.team-social-icon {
+    fill: currentColor;
+}
+
+.team-social-link:hover, 
+.team-social-link:focus {
+    background-color: var(--green);
 }
 
 
-.team .icon {
+/* .team .icon {
    justify-content: center;
-   margin-left: 15px;
-   fill: #4D5AE5;
-}
+   margin-left: 18px;
+   margin-top: 20px;
+   background: url(../images/Eclipse.svg), no-repeat;
 
-.icon {
-    border: 2px dashed #2a2a2a;
-    border-radius: 8px;
-    fill: #4D5AE5;
+   
+} */
+
+/* .icon {
+    border-radius: 18px;   
+    background: url(../images/Ellipse.svg), no-repeat;
+    fill: #F4F4FD;
+    
+} */
+
+/* .icon {
+    fill: #F4F4FD;
     
 }
 
 .icon:hover {
-    fill: var(--iriscolor);
-}
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+} */
+
 
 /*----Checked----*/
 .projects {
@@ -495,6 +546,45 @@ body {
     line-height: 1.5;
     padding-top: 17px;
 }
+
+/* .social-media {
+    width: 30% - 15px;
+    padding-left: 100px;
+} */
+
+.social-media-title {
+    color: var(--whitecolor);
+    margin-right: 30%;
+}
+
+.social-media-title,
+.team-social-item {
+    
+    gap: 10px;
+    
+}
+
+
+.social-media-list {
+
+}
+
+.footer-social-media {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--whitecolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.footer-social-media,
+.team-social-icon {
+    display: flex;
+    align-items: center;
+}
+
 
 /*----Checked----*/
 .logo,
