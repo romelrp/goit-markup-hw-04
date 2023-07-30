@@ -170,7 +170,7 @@ body {
     background: url(../images/people-office.jpg), lightgray 0px -167.766px / 100% 139.922% no-repeat;
     color: #fff;
     text-align: center;
-    background-position: center;
+    background-position: center; 
 }
 
 /*----Checked----*/
@@ -272,19 +272,29 @@ body {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    color: var(--navyblue);
+
 }
 
 /* .benefits.image {
     background: var(--cloud);
 } */
 
-.benefits-image {
+/* This will change to icon */ 
+.icon {
     background: var(--cloud);
     width: 264px;
     height: 112px;
     flex-shrink: 0;
     display: flex;
+    align-items: center;
     padding-left: 35%;
+    border-radius: 4px;
+    fill: none;
+    stroke: currentColor;
+    box-shadow: rgba(0, 0, 0. 0.15);
+    
+
 }
 
 /*----Checked----*/
