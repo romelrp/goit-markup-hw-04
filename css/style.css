@@ -293,23 +293,17 @@ body {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    padding-left: 35%;
-    border-radius: 4px;
     border-color: #2E2F42;
 }
 
-.antenna,
-.clock,
-.diagram,
-.astronaut {
-    fill: currentColor;
-} 
 
-/* .benefits .icon {
+.benefits .icon {
+    fill: currentColor;
     display: flex;
-} */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
 
 /*----Checked----*/
 .benefits .item {
@@ -369,7 +363,6 @@ body {
     font-size: 36px;
     line-height: 1.17;
     font-weight: 700;
-    margin-bottom: 50px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
@@ -514,6 +507,8 @@ body {
     padding: auto;
     justify-content: center;
     color: #8E8F99;
+    height: 200px;
+    padding: 72px;
     
 } 
 
@@ -527,26 +522,35 @@ body {
     
 }
 
-.partners .link {
+/* .partners .link {
     justify-content: center;
-    align-items: center;
+    align-items: center;  
    
-}
+} */
 
-.link .icon {
+
+
+/* .link .icon {
     fill: currentColor;
     border: 4px;
     border: 1px solid var(--lightslate, #8E8F99);
     width: 168px;
-    height: 88px;
-    display: flex;
-    justify-content: center;
-    
-}
+    height: 88px;   
+} */
 
-.icon {
+/* .icon.client-1 {
     align-items: center;
-}
+    
+ } */
+
+.partners .icon {
+    fill: currentColor;
+    border: 4px;
+    border: 1px solid var(--lightslate, #8E8F99);
+    width: 168px;
+    height: 88px; 
+ } 
+
 
 /*----Checked----*/
 /* .page-footer {
@@ -557,6 +561,24 @@ body {
 .page-footer {
     background-color: var(--navyblue);
     padding: 60px 0;
+}
+/* .footer,
+.footer-address,
+.logo-link,
+.footer-description, */
+
+
+.footer {
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.footer-address .footer-block {
+    flex: 1;
+    text-align: center;
+    justify-content: space-around;
+   
 }
 
 /*----Checked----*/
@@ -589,7 +611,8 @@ body {
 } */
 
 .footer-block {
-   padding: auto;
+    list-style-type: none;
+    margin-left: 135px;
 }
 
 .footer-heading {
@@ -603,30 +626,37 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    margin-right: 27%;
+
+  
 }
 /*last*/
 .footer-heading .social-footer {
    margin-bottom: 50%;
    flex-direction: column;
-    
+
 }
 
 .social-footer {
     display: flex;
     justify-content: center;
-    margin-right: 30%;
     gap: 10px
 }
 
-
-
-.social-footer .icon-item {
-
+.footer-heading .social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
 }
 
-.social-footer .icon-item {
 
+.social-footer .icon-item {
+    margin-right: 10px;
+}
+
+.icon-item {
+    
 }
 
 
