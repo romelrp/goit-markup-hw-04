@@ -289,11 +289,14 @@ body {
 
 
 .benefits .icon {
-    fill: currentColor;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 120px;
+    background-color: var(--cloud);
+    border-radius: 4px;
 }
 
 /*----Checked----*/
@@ -456,9 +459,12 @@ body {
 .project-card {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 30px; 
+}
+.project-card:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 
 /*----Checked----*/
 .substrate {
@@ -498,7 +504,6 @@ body {
 
 .partners {
     display: flex;
-    justify-content: center;
     gap: 30px
 }
 
@@ -516,7 +521,14 @@ body {
     border: 1px solid var(--lightslate);
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
     color: var(--lightslate)
+}
+.partners .link:hover,
+.partners .link:focus {
+    color: var(--ocean);
+    border-color: var(--ocean);
+
 }
 
 
